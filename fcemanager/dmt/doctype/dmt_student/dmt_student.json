@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DMT-{name1}.###",
+ "creation": "2026-03-31 15:09:52.628037",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "aplicant_tab",
+  "applicant_section",
+  "name1",
+  "country",
+  "section_break_caxd",
+  "asd",
+  "dmt_tab",
+  "follow_up_tab",
+  "contact_details_section",
+  "country_of_residence",
+  "adress",
+  "phone_number",
+  "email_adress",
+  "follow_up_section",
+  "data_bpms"
+ ],
+ "fields": [
+  {
+   "fieldname": "aplicant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Aplicant"
+  },
+  {
+   "fieldname": "applicant_section",
+   "fieldtype": "Section Break",
+   "label": "Applicant"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "section_break_caxd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "asd",
+   "fieldtype": "Data",
+   "label": "asd"
+  },
+  {
+   "fieldname": "dmt_tab",
+   "fieldtype": "Tab Break",
+   "label": "DMT"
+  },
+  {
+   "fieldname": "follow_up_tab",
+   "fieldtype": "Tab Break",
+   "label": "Follow Up"
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "country_of_residence",
+   "fieldtype": "Link",
+   "label": "Country of Residence",
+   "options": "Country"
+  },
+  {
+   "fieldname": "adress",
+   "fieldtype": "Data",
+   "label": "Adress"
+  },
+  {
+   "default": "phone",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "default": "email",
+   "fieldname": "email_adress",
+   "fieldtype": "Data",
+   "label": "Email Adress"
+  },
+  {
+   "fieldname": "follow_up_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Up"
+  },
+  {
+   "fieldname": "data_bpms",
+   "fieldtype": "Data"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-31 16:02:06.513639",
+ "modified_by": "Administrator",
+ "module": "DMT",
+ "name": "DMT Student",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
