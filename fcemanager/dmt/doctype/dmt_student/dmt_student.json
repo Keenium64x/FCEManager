@@ -10,6 +10,7 @@
   "applicant_section",
   "name1",
   "country",
+  "relation",
   "section_break_caxd",
   "asd",
   "dmt_tab",
@@ -36,6 +37,8 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Name"
   },
   {
@@ -98,13 +101,19 @@
   {
    "fieldname": "data_bpms",
    "fieldtype": "Data"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Table",
+   "label": "Relation",
+   "options": "DMT Relation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-31 16:02:06.513639",
+ "modified": "2026-04-01 14:47:16.702234",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Student",

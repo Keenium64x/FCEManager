@@ -3,30 +3,22 @@
 
 # import frappe
 from frappe.model.document import Document
-import frappe
-from datetime import datetime
 
-class DMTStudent(Document):
+
+class DMTRelation(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from fcemanager.dmt.doctype.dmt_relation.dmt_relation import DMTRelation
 		from frappe.types import DF
 
-		adress: DF.Data | None
-		asd: DF.Data | None
-		country: DF.Data | None
-		country_of_residence: DF.Link | None
-		data_bpms: DF.Data | None
-		email_adress: DF.Data | None
-		name1: DF.Data | None
 		parent: DF.Data
 		parentfield: DF.Data
 		parenttype: DF.Data
-		phone_number: DF.Data | None
-		relation: DF.Table[DMTRelation]
+		relation: DF.Literal["Wife", "Husband", "Son", "Daughter", "Child", "Baby", "Grandmother", "Grandfather"]
+		to: DF.Link | None
 	# end: auto-generated types
 
+	pass

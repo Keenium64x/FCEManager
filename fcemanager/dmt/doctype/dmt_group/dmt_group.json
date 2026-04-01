@@ -5,18 +5,33 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_yobu"
+  "dmt_period_information_section",
+  "dmt_period",
+  "students"
  ],
  "fields": [
   {
-   "fieldname": "section_break_yobu",
-   "fieldtype": "Section Break"
+   "fieldname": "dmt_period_information_section",
+   "fieldtype": "Section Break",
+   "label": "DMT Period Information"
+  },
+  {
+   "fieldname": "students",
+   "fieldtype": "Table",
+   "label": "Students",
+   "options": "DMT Student"
+  },
+  {
+   "fieldname": "dmt_period",
+   "fieldtype": "Link",
+   "label": "DMT Period",
+   "options": "DMT Period"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 15:22:21.833805",
+ "modified": "2026-04-01 14:36:45.559601",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Group",
