@@ -1,0 +1,21 @@
+{
+ "app": "fcemanager",
+ "bg_color": "gray",
+ "creation": "2026-04-03 15:39:39.400531",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "App",
+ "idx": 0,
+ "label": "FCEManager App",
+ "link": "/desk/dmt-student",
+ "link_type": "External",
+ "modified": "2026-04-03 15:39:39.400531",
+ "modified_by": "Administrator",
+ "name": "FCEManager App",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "",
+ "standard": 1
+}

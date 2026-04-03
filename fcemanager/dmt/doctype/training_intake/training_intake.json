@@ -1,40 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-31 15:22:21.833805",
+ "creation": "2026-04-01 15:01:49.954572",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dmt_period_information_section",
-  "dmt_period",
-  "students"
+  "dmt_training_intake_section",
+  "period",
+  "training_centre"
  ],
  "fields": [
   {
-   "fieldname": "dmt_period_information_section",
+   "fieldname": "dmt_training_intake_section",
    "fieldtype": "Section Break",
-   "label": "DMT Period Information"
+   "label": "DMT Training Intake"
   },
   {
-   "fieldname": "students",
-   "fieldtype": "Table",
-   "label": "Students",
-   "options": "DMT Student"
-  },
-  {
-   "fieldname": "dmt_period",
+   "fieldname": "period",
    "fieldtype": "Link",
-   "label": "DMT intake",
-   "options": "Training Intake"
+   "label": "Period",
+   "options": "DMT Period"
+  },
+  {
+   "fieldname": "training_centre",
+   "fieldtype": "Link",
+   "label": "Training Centre",
+   "options": "Training Centre"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-01 15:17:12.538627",
+ "modified": "2026-04-01 15:04:53.247751",
  "modified_by": "Administrator",
  "module": "DMT",
- "name": "DMT Group",
+ "name": "Training Intake",
  "owner": "Administrator",
  "permissions": [
   {

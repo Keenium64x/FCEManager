@@ -1,0 +1,69 @@
+{
+ "app": "fcemanager",
+ "creation": "2026-04-03 15:19:43.115867",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "notebook-tabs",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "library-big",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "DMT Student",
+   "link_to": "DMT Student",
+   "link_type": "DocType",
+   "open_in_new_tab": 1,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "folder-closed",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "DMT Group",
+   "link_to": "DMT Group",
+   "link_type": "DocType",
+   "open_in_new_tab": 1,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "calendar-1",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Training Intake",
+   "link_to": "Training Intake",
+   "link_type": "DocType",
+   "open_in_new_tab": 1,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "school",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Training center",
+   "link_to": "Training Centre",
+   "link_type": "DocType",
+   "open_in_new_tab": 1,
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-03 15:30:57.326849",
+ "modified_by": "Administrator",
+ "module": "DMT",
+ "name": "FCEManager",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "FCEManager"
+}

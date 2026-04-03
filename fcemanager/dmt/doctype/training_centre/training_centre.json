@@ -1,40 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-31 15:22:21.833805",
+ "creation": "2026-04-01 15:02:50.215546",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dmt_period_information_section",
-  "dmt_period",
-  "students"
+  "training_centre_section",
+  "centre",
+  "country",
+  "adress"
  ],
  "fields": [
   {
-   "fieldname": "dmt_period_information_section",
+   "fieldname": "training_centre_section",
    "fieldtype": "Section Break",
-   "label": "DMT Period Information"
+   "label": "Training centre"
   },
   {
-   "fieldname": "students",
-   "fieldtype": "Table",
-   "label": "Students",
-   "options": "DMT Student"
+   "fieldname": "centre",
+   "fieldtype": "Data",
+   "label": "Centre",
+   "unique": 1
   },
   {
-   "fieldname": "dmt_period",
+   "fieldname": "country",
    "fieldtype": "Link",
-   "label": "DMT intake",
-   "options": "Training Intake"
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "adress",
+   "fieldtype": "Data",
+   "label": "Adress"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-01 15:17:12.538627",
+ "modified": "2026-04-01 15:11:29.778150",
  "modified_by": "Administrator",
  "module": "DMT",
- "name": "DMT Group",
+ "name": "Training Centre",
  "owner": "Administrator",
  "permissions": [
   {
