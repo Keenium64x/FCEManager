@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Setup Training centre",
+ "creation": "2026-04-03 20:15:30.032743",
+ "description": "### First the DMT system needs to be configured\n\n#### This can be done by first adding all the training centres",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-04-03 20:15:30.032743",
+ "modified_by": "Administrator",
+ "name": "DMT Setup",
+ "owner": "Administrator",
+ "reference_document": "Training Centre",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "DMT Setup",
+ "validate_action": 1
+}

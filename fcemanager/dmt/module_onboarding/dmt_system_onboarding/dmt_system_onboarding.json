@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "creation": "2026-04-03 20:19:37.702424",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-04-25 00:09:47.480849",
+ "modified_by": "Administrator",
+ "module": "DMT",
+ "name": "DMT System Onboarding",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Create Training Center"
+  },
+  {
+   "step": "Create DMT Student"
+  }
+ ],
+ "title": "DMT System Onboarding"
+}

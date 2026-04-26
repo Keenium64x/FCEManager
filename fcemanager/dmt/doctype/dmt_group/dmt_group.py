@@ -12,11 +12,11 @@ class DMTGroup(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from fcemanager.dmt.doctype.dmt_student.dmt_student import DMTStudent
+		from fcemanager.dmt.doctype.dmt_student_listing.dmt_student_listing import DMTStudentlisting
 		from frappe.types import DF
 
 		dmt_period: DF.Link | None
-		students: DF.Table[DMTStudent]
+		students: DF.Table[DMTStudentlisting]
 	# end: auto-generated types
 
 	def autoname(self):

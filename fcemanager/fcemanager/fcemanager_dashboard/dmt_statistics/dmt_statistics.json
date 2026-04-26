@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Total DMT Students",
+   "width": "Half"
+  },
+  {
+   "chart": "Country Of Origin",
+   "width": "Half"
+  }
+ ],
+ "creation": "2026-04-03 20:24:52.611990",
+ "dashboard_name": "DMT Statistics",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2026-04-03 20:57:08.589877",
+ "modified_by": "Administrator",
+ "module": "FCEManager",
+ "name": "DMT Statistics",
+ "owner": "Administrator"
+}

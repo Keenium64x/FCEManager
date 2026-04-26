@@ -14,7 +14,7 @@ class DMTStudentlisting(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		country: DF.Data | None
+		country_of_origin: DF.Data | None
 		dmt_student: DF.Link | None
 		email: DF.Data | None
 		name1: DF.Data | None

@@ -19,7 +19,7 @@
    "fieldname": "students",
    "fieldtype": "Table",
    "label": "Students",
-   "options": "DMT Student"
+   "options": "DMT Student listing"
   },
   {
    "fieldname": "dmt_period",
@@ -31,7 +31,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-01 15:17:12.538627",
+ "modified": "2026-04-03 16:27:47.285513",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Group",

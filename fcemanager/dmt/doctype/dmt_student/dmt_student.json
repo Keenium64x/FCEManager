@@ -1,23 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "DMT-{name1}.###",
  "creation": "2026-03-31 15:09:52.628037",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "aplicant_tab",
+  "applying_tab",
   "applicant_section",
   "first_name",
   "last_name",
-  "middle_names",
-  "full_name",
   "country_of_origin",
   "column_break_mpbi",
+  "middle_names",
+  "full_name",
+  "relation_section",
   "relation",
   "section_break_caxd",
   "application_form",
   "status",
+  "payment",
   "contact_details_section",
   "phone",
   "email",
@@ -26,14 +27,16 @@
   "dmt_tab",
   "dmt_status_section",
   "highest_module_completed",
-  "follow_up_tab"
+  "follow_up_tab",
+  "amended_from",
+  "whatsapp_community",
+  "logs_tab",
+  "notes_section",
+  "note",
+  "visitation_section",
+  "last_time_visited"
  ],
  "fields": [
-  {
-   "fieldname": "aplicant_tab",
-   "fieldtype": "Tab Break",
-   "label": "Aplicant"
-  },
   {
    "fieldname": "applicant_section",
    "fieldtype": "Section Break",
@@ -65,7 +68,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "First Name"
+   "label": "First Name",
+   "options": "Name"
   },
   {
    "fieldname": "last_name",
@@ -75,25 +79,26 @@
   {
    "fieldname": "middle_names",
    "fieldtype": "Data",
-   "label": "Middle Name(s)"
+   "label": "Middle Name(s)",
+   "options": "Name"
   },
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_mpbi",
    "fieldtype": "Column Break"
   },
   {
-   "default": "phone",
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "label": "Phone",
+   "options": "Phone"
   },
   {
-   "default": "email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -105,10 +110,12 @@
    "options": "DMT Application"
   },
   {
+   "default": "Pending",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Accepted\nRejected\nPending"
+   "options": "Pending\nAccepted\nRejected",
+   "sort_options": 1
   },
   {
    "fieldname": "dmt_status_section",
@@ -119,7 +126,7 @@
    "fieldname": "highest_module_completed",
    "fieldtype": "Select",
    "label": "Highest Module Completed",
-   "options": "Module 7\nModule 8\nModule 9"
+   "options": "\nModule 7\nModule 8\nModule 9"
   },
   {
    "fieldname": "contact_details_section",
@@ -128,9 +135,10 @@
   },
   {
    "fieldname": "country_of_origin",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Country Of Origin"
+   "label": "Country Of Origin",
+   "options": "Country"
   },
   {
    "fieldname": "current_country",
@@ -142,16 +150,72 @@
    "fieldname": "current_address",
    "fieldtype": "Data",
    "label": "Current Address"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "DMT Student",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "relation_section",
+   "fieldtype": "Section Break",
+   "label": "Relation"
+  },
+  {
+   "fieldname": "whatsapp_community",
+   "fieldtype": "Select",
+   "label": "Whatsapp Community",
+   "options": "Member\nInvited\nPending"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "logs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Logs"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Long Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "visitation_section",
+   "fieldtype": "Section Break",
+   "label": "Visitation"
+  },
+  {
+   "fieldname": "last_time_visited",
+   "fieldtype": "Date",
+   "label": "Last Time Visited"
+  },
+  {
+   "fieldname": "applying_tab",
+   "fieldtype": "Tab Break",
+   "label": "Applying"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "label": "Payment",
+   "options": "Paid\nPending\nCustom"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-03 16:13:39.549638",
+ "modified": "2026-04-26 16:57:47.974759",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Student",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -171,5 +235,18 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Orange",
+   "title": "Pending"
+  },
+  {
+   "color": "Green",
+   "title": "Accepted"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  }
+ ]
 }

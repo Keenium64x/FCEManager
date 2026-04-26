@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "DMT-.{name1}.###",
  "creation": "2026-04-03 16:08:27.824232",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,8 +10,8 @@
   "dmt_student_section",
   "dmt_student",
   "name1",
-  "country",
-  "email"
+  "email",
+  "country_of_origin"
  ],
  "fields": [
   {
@@ -21,6 +22,7 @@
   {
    "fieldname": "dmt_student",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "DMT Student",
    "options": "DMT Student"
   },
@@ -28,28 +30,32 @@
    "fetch_from": "dmt_student.full_name",
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name"
-  },
-  {
-   "fetch_from": "dmt_student.country_of_residence",
-   "fieldname": "country",
-   "fieldtype": "Data",
-   "label": "Country"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Email"
+  },
+  {
+   "fetch_from": "dmt_student.country_of_origin",
+   "fieldname": "country_of_origin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Of Origin"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-04-03 16:11:07.689447",
+ "modified": "2026-04-03 16:27:18.258216",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Student listing",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

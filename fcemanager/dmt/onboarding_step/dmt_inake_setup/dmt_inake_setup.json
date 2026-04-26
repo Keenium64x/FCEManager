@@ -1,0 +1,20 @@
+{
+ "action": "Create Entry",
+ "creation": "2026-04-03 20:19:29.497037",
+ "description": "#### The next step in configuring the system is adding the DMT dates through the DMT period Doctype.\n\n#### Then you need to create a DMT intake linking the DMT period with the Training Centre ",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-04-03 20:19:29.497037",
+ "modified_by": "Administrator",
+ "name": "DMT Inake Setup",
+ "owner": "Administrator",
+ "reference_document": "Training Intake",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "DMT Inake Setup",
+ "validate_action": 1
+}

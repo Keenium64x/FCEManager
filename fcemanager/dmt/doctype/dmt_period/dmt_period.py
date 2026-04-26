@@ -11,7 +11,7 @@ class DMTPeriod(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		dmt_type: DF.Literal["Standard", "Condense"]
+		dmt_type: DF.Literal["Standard", "Condense", "Extended", "Advance"]
 		duration: DF.Duration | None
 		end_date: DF.Date
 		start_date: DF.Date

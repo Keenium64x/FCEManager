@@ -1,0 +1,152 @@
+{
+ "app": "fcemanager",
+ "charts": [
+  {
+   "chart_name": "Country Of Origin",
+   "label": "DMT Students"
+  }
+ ],
+ "content": "[{\"id\":\"BtexRngOt5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">FCE Manager</span>\",\"col\":12}},{\"id\":\"ND5uGjmpSu\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"DMT System Onboarding\",\"col\":12}},{\"id\":\"bVYVuuAaF5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Welcome to FCE Manager! Please see the on boarding to learn how to use the system\",\"col\":12}},{\"id\":\"Kqj3DE9Yaf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"DMT Students\",\"col\":12}},{\"id\":\"v-doo7_G_c\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}},{\"id\":\"0zIcpms0xt\",\"type\":\"card\",\"data\":{\"card_name\":\"DMT Students\",\"col\":4}},{\"id\":\"NRdOphXKhV\",\"type\":\"card\",\"data\":{\"card_name\":\"Website\",\"col\":4}},{\"id\":\"TFmsTn4sYm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report Dashboard\",\"col\":3}},{\"id\":\"UZnx2fV-w_\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2026-04-24 23:50:17.213715",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "airplay",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "FCEManager",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Centre",
+   "link_count": 0,
+   "link_to": "Training Centre",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Intake",
+   "link_count": 0,
+   "link_to": "Training Intake",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DMT Group",
+   "link_count": 0,
+   "link_to": "DMT Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DMT Students",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DMT Student",
+   "link_count": 0,
+   "link_to": "DMT Student",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DMT Application",
+   "link_count": 0,
+   "link_to": "DMT Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Website",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "setup-wizard",
+   "link_count": 0,
+   "link_to": "setup-wizard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Addresses And Contacts",
+   "link_count": 0,
+   "link_to": "Addresses And Contacts",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-25 14:05:55.438563",
+ "modified_by": "Administrator",
+ "module": "FCEManager",
+ "name": "FCEManager",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Build",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Report Dashboard",
+   "link_to": "DMT Statistics",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "FCEManager",
+ "type": "Workspace"
+}
