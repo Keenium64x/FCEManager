@@ -5,21 +5,101 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "application_section",
+  "training_intake_section",
+  "training_intake_choice",
   "training_intake",
-  "what_is_your_motivation_for_applying_for_this_training",
-  "referral_type_section",
-  "parentguardian",
-  "friend",
-  "an_fce_or_ufce_student",
-  "pastor_church_member_or_spiritual_mentor",
-  "social_media_post",
-  "booth_at_a_missionschurch_conference",
-  "other",
-  "section_break_pqvv",
+  "reason_for_applying_section",
+  "motivation_for_applying",
+  "referral_type",
   "referral_person_or_organisation",
+  "expectations_for_training",
+  "personal_spiritual_life_section",
+  "became_follower_of_christ",
+  "lord_teaching_now",
+  "discipleship_calling",
+  "family_feelings_about_training",
+  "hobbies",
+  "personal_info_section",
+  "title",
+  "first_name",
+  "middle_names",
+  "surname",
+  "preferred_name",
+  "applicant_full_name",
+  "personal_info_column",
+  "date_of_birth",
+  "gender",
+  "marital_status",
+  "home_language",
+  "english_fluency",
+  "other_languages",
+  "spouse_section",
+  "spouse_name",
+  "spouse_date_of_birth",
+  "attend_with_spouse",
+  "dependants_section",
+  "number_of_dependants",
+  "dependants_accompanying",
+  "contact_details_section",
+  "postal_street_address",
+  "postal_line_2",
+  "postal_city",
+  "postal_state_province",
+  "postal_code",
+  "postal_country",
+  "contact_details_column",
+  "physical_street_address",
+  "physical_line_2",
+  "physical_city",
+  "physical_state_province",
+  "physical_postal_code",
+  "physical_country",
+  "other_contact_details_section",
+  "email_address",
+  "primary_phone_number",
+  "secondary_phone_number",
+  "education_work_experience_section",
+  "highest_grade_level",
+  "occupation",
+  "currently_employed",
+  "workplace_name",
+  "main_responsibilities",
+  "date_work_started",
+  "date_work_ended",
+  "emergency_contact_section",
+  "emergency_contact_name",
+  "emergency_contact_relationship",
+  "emergency_contact_address",
+  "emergency_contact_primary_phone",
+  "emergency_contact_secondary_phone",
+  "emergency_contact_email",
+  "social_support_section",
+  "social_support_network",
+  "discipleship_support",
+  "associated_with_local_church",
+  "local_church_section",
+  "local_church_name",
+  "local_church_denomination",
+  "pastor_minister_name",
+  "local_church_address",
+  "local_church_phone",
+  "local_church_email",
+  "years_of_membership",
+  "local_church_involvement",
+  "pastor_approval",
+  "church_financial_support",
+  "church_missionary_sending",
+  "finances_payment_section",
+  "sufficient_financial_resources",
+  "source_of_funds",
+  "payment_plan",
+  "agreements_section",
+  "financial_agreement",
+  "consent_for_treatment_signature",
+  "final_agreement",
+  "legacy_fields_section",
+  "what_is_your_motivation_for_applying_for_this_training",
   "what_are_your_expectations_for_this_training",
-  "tab_2_tab",
   "when_and_how_did_you_become_a_follower_of_christ",
   "what_are_the_things_the_lord_is_teaching_you_at_the_moment",
   "have_you_answered_gods_call_to_discipleship",
@@ -27,114 +107,609 @@
  ],
  "fields": [
   {
-   "fieldname": "application_section",
+   "fieldname": "training_intake_section",
    "fieldtype": "Section Break",
-   "label": "Application"
+   "label": "Training Intake",
+   "description": "Choose the course for which you are applying. See Upcoming Courses at https://fce.org.za for more info. If you are not sure, pick the \"Not Sure\" option and we will get in touch with you."
+  },
+  {
+   "fieldname": "training_intake_choice",
+   "fieldtype": "Select",
+   "label": "Training Intake",
+   "reqd": 1,
+   "options": "January 2027: DMT Foundation in Pringle Bay, South Africa\nApril 2027: DMT Foundation in Okahandja, Namibia\nOctober 2027: DMT Foundation in Pringle Bay, South Africa\nDMT Extended (Invitation only)\nNot sure"
   },
   {
    "fieldname": "training_intake",
    "fieldtype": "Link",
-   "label": "Training Intake",
-   "options": "Training Intake"
+   "label": "Internal Training Intake",
+   "options": "Training Intake",
+   "description": "Optional internal link used by administrators after submission."
   },
   {
-   "fieldname": "what_is_your_motivation_for_applying_for_this_training",
-   "fieldtype": "Small Text",
-   "label": "What is your motivation for applying for this training?"
-  },
-  {
-   "fieldname": "referral_type_section",
+   "fieldname": "reason_for_applying_section",
    "fieldtype": "Section Break",
-   "label": "Referral Type"
+   "label": "Reason for Applying",
+   "description": "FCE's work and training focuses on \"renewing the mind\" (Rom. 12:1-2). Answer these questions about your spiritual and personal life honestly."
   },
   {
-   "default": "0",
-   "fieldname": "parentguardian",
-   "fieldtype": "Check",
-   "label": "Parent/Guardian"
+   "fieldname": "motivation_for_applying",
+   "fieldtype": "Long Text",
+   "label": "What is your motivation for applying for this training?",
+   "reqd": 1
   },
   {
-   "default": "0",
-   "fieldname": "friend",
-   "fieldtype": "Check",
-   "label": "Friend"
-  },
-  {
-   "default": "0",
-   "fieldname": "an_fce_or_ufce_student",
-   "fieldtype": "Check",
-   "label": "An FCE or UFCE student"
-  },
-  {
-   "default": "0",
-   "fieldname": "pastor_church_member_or_spiritual_mentor",
-   "fieldtype": "Check",
-   "label": "Pastor, church member, or spiritual mentor"
-  },
-  {
-   "default": "0",
-   "fieldname": "social_media_post",
-   "fieldtype": "Check",
-   "label": "Social media post"
-  },
-  {
-   "default": "0",
-   "fieldname": "booth_at_a_missionschurch_conference",
-   "fieldtype": "Check",
-   "label": "Booth at a missions/church conference"
-  },
-  {
-   "fieldname": "other",
-   "fieldtype": "Small Text",
-   "label": "Other"
-  },
-  {
-   "fieldname": "section_break_pqvv",
-   "fieldtype": "Section Break"
+   "fieldname": "referral_type",
+   "fieldtype": "Select",
+   "label": "How did you find out about this training?",
+   "reqd": 1,
+   "options": "Parent/Guardian\nFriend\nAn FCE or UFCE student\nPastor, church member, or spiritual mentor\nSocial media post\nBooth at a missions/church conference\nOther"
   },
   {
    "fieldname": "referral_person_or_organisation",
    "fieldtype": "Data",
-   "label": "Referral person or organisation"
+   "label": "Referral person or organisation",
+   "description": "(Optional) If you found out about the training from a person or organisation, please share their name."
+  },
+  {
+   "fieldname": "expectations_for_training",
+   "fieldtype": "Long Text",
+   "label": "What are your expectations for this training?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personal_spiritual_life_section",
+   "fieldtype": "Section Break",
+   "label": "Personal/Spiritual Life"
+  },
+  {
+   "fieldname": "became_follower_of_christ",
+   "fieldtype": "Long Text",
+   "label": "When and how did you become a follower of Christ?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lord_teaching_now",
+   "fieldtype": "Long Text",
+   "label": "What are the things the Lord is teaching you at the moment?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "discipleship_calling",
+   "fieldtype": "Long Text",
+   "label": "Have you responded to God's calling to make disciples of all nations?",
+   "reqd": 1,
+   "description": "If yes, please give a brief account of your calling and the guidance you received."
+  },
+  {
+   "fieldname": "family_feelings_about_training",
+   "fieldtype": "Long Text",
+   "label": "How does your family feel about your possible training in FCE and the possibility of being involved in cross-cultural discipleship situations?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hobbies",
+   "fieldtype": "Long Text",
+   "label": "What are your hobbies?",
+   "reqd": 1,
+   "description": "Name and describe any hobbies you have."
+  },
+  {
+   "fieldname": "personal_info_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Info"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Select",
+   "label": "Title",
+   "options": "Mr\nMrs\nMs\nMiss\nDr"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1,
+   "description": "As it appears on your ID/passport"
+  },
+  {
+   "fieldname": "middle_names",
+   "fieldtype": "Data",
+   "label": "Middle Name(s)",
+   "description": "As they appear on your ID/passport"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "label": "Surname",
+   "reqd": 1,
+   "description": "As it appears on your ID/passport"
+  },
+  {
+   "fieldname": "preferred_name",
+   "fieldtype": "Data",
+   "label": "Preferred name",
+   "description": "If different than your first name."
+  },
+  {
+   "fieldname": "applicant_full_name",
+   "fieldtype": "Data",
+   "label": "Applicant Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "personal_info_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "reqd": 1,
+   "options": "Female\nMale",
+   "description": "As indicated on passport/ID."
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "reqd": 1,
+   "options": "Single\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "home_language",
+   "fieldtype": "Data",
+   "label": "Home Language",
+   "reqd": 1
+  },
+  {
+   "fieldname": "english_fluency",
+   "fieldtype": "Select",
+   "label": "Indicate your level of fluency in English",
+   "reqd": 1,
+   "options": "Native speaker\nFully fluent\nWorking professional ability\nLimited working ability\nBasic conversational ability\nNo fluency"
+  },
+  {
+   "fieldname": "other_languages",
+   "fieldtype": "Long Text",
+   "label": "Other Languages and level of proficiency",
+   "description": "For each language, indicate your level of fluency, e.g. German: fluent, French: professional ability, Portuguese: conversational."
+  },
+  {
+   "fieldname": "spouse_section",
+   "fieldtype": "Section Break",
+   "label": "Spouse"
+  },
+  {
+   "fieldname": "spouse_name",
+   "fieldtype": "Data",
+   "label": "Name of Spouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spouse_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Spouse's date of birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attend_with_spouse",
+   "fieldtype": "Select",
+   "label": "Do you plan to attend the training with your spouse?",
+   "reqd": 1,
+   "options": "Yes\nNo\nMaybe"
+  },
+  {
+   "fieldname": "dependants_section",
+   "fieldtype": "Section Break",
+   "label": "Dependants",
+   "description": "Dependants are people who depend on you for support, such as your children or other children living with you."
+  },
+  {
+   "fieldname": "number_of_dependants",
+   "fieldtype": "Data",
+   "label": "Number of dependants",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dependants_accompanying",
+   "fieldtype": "Data",
+   "label": "Number of dependants you plan to accompany you on training",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "postal_street_address",
+   "fieldtype": "Data",
+   "label": "Postal Street Address/P.O. Box",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_line_2",
+   "fieldtype": "Data",
+   "label": "Postal Line 2",
+   "description": "e.g. Apartment number"
+  },
+  {
+   "fieldname": "postal_city",
+   "fieldtype": "Data",
+   "label": "Postal City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_state_province",
+   "fieldtype": "Data",
+   "label": "Postal State/Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal code"
+  },
+  {
+   "fieldname": "postal_country",
+   "fieldtype": "Select",
+   "label": "Postal Country",
+   "reqd": 1,
+   "options": "Afghanistan\n\u00c5land Islands\nAlbania\nAlgeria\nAmerican Samoa\nAndorra\nAngola\nAnguilla\nAntarctica\nAntigua and Barbuda\nArgentina\nArmenia\nAruba\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBermuda\nBhutan\nBolivia\nBosnia and Herzegovina\nBotswana\nBrazil\nBritish Indian Ocean Territory\nBrunei Darussalam\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCayman Islands\nCentral African Republic\nChad\nChile\nChina\nChristmas Island\nColombia\nComoros\nCongo, Democratic Republic of the\nCongo, Republic of the\nCook Islands\nCosta Rica\nC\u00f4te d'Ivoire\nCroatia\nCuba\nCura\u00e7ao\nCyprus\nCzech Republic\nDenmark\nDjibouti\nDominica\nDominican Republic\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEthiopia\nFalkland Islands (Malvinas)\nFaroe Islands\nFiji\nFinland\nFrance\nFrench Guiana\nFrench Polynesia\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGibraltar\nGreece\nGreenland\nGrenada\nGuadeloupe\nGuam\nGuatemala\nGuernsey\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHong Kong\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsle of Man\nIsrael\nItaly\nJamaica\nJapan\nJersey\nJordan\nKazakhstan\nKenya\nKiribati\nKorea, Republic of\nKuwait\nKyrgyzstan\nLao People's Democratic Republic\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacao\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMartinique\nMauritania\nMauritius\nMayotte\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMontserrat\nMorocco\nMozambique\nMyanmar\nNamibia\nNauru\nNepal\nNetherlands\nNew Caledonia\nNew Zealand\nNicaragua\nNiger\nNigeria\nNiue\nNorth Macedonia\nNorway\nOman\nPakistan\nPalau\nPalestine\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPitcairn\nPoland\nPortugal\nPuerto Rico\nQatar\nR\u00e9union\nRomania\nRussian Federation\nRwanda\nSaint Barth\u00e9lemy\nSaint Helena\nSaint Kitts and Nevis\nSaint Lucia\nSaint Martin\nSaint Pierre and Miquelon\nSaint Vincent and the Grenadines\nSamoa\nSan Marino\nSao Tome and Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSint Maarten\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Georgia and the South Sandwich Islands\nSouth Sudan\nSpain\nSri Lanka\nSudan\nSuriname\nSvalbard and Jan Mayen\nSwaziland\nSweden\nSwitzerland\nSyrian Arab Republic\nTaiwan\nTajikistan\nTanzania\nThailand\nTimor-Leste\nTogo\nTokelau\nTonga\nTrinidad and Tobago\nTunisia\nTurkey\nTurkmenistan\nTurks and Caicos Islands\nTuvalu\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVenezuela\nViet Nam\nVirgin Islands, British\nVirgin Islands, U.S.\nWallis and Futuna\nWestern Sahara\nYemen\nZambia\nZimbabwe"
+  },
+  {
+   "fieldname": "contact_details_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "physical_street_address",
+   "fieldtype": "Data",
+   "label": "Physical Street Address",
+   "description": "If different than your Postal Address."
+  },
+  {
+   "fieldname": "physical_line_2",
+   "fieldtype": "Data",
+   "label": "Physical Line 2",
+   "description": "e.g. Apartment number"
+  },
+  {
+   "fieldname": "physical_city",
+   "fieldtype": "Data",
+   "label": "Physical City"
+  },
+  {
+   "fieldname": "physical_state_province",
+   "fieldtype": "Data",
+   "label": "Physical State/Province"
+  },
+  {
+   "fieldname": "physical_postal_code",
+   "fieldtype": "Data",
+   "label": "Physical Postal code"
+  },
+  {
+   "fieldname": "physical_country",
+   "fieldtype": "Select",
+   "label": "Physical Country",
+   "options": "Afghanistan\n\u00c5land Islands\nAlbania\nAlgeria\nAmerican Samoa\nAndorra\nAngola\nAnguilla\nAntarctica\nAntigua and Barbuda\nArgentina\nArmenia\nAruba\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBermuda\nBhutan\nBolivia\nBosnia and Herzegovina\nBotswana\nBrazil\nBritish Indian Ocean Territory\nBrunei Darussalam\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCayman Islands\nCentral African Republic\nChad\nChile\nChina\nChristmas Island\nColombia\nComoros\nCongo, Democratic Republic of the\nCongo, Republic of the\nCook Islands\nCosta Rica\nC\u00f4te d'Ivoire\nCroatia\nCuba\nCura\u00e7ao\nCyprus\nCzech Republic\nDenmark\nDjibouti\nDominica\nDominican Republic\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEthiopia\nFalkland Islands (Malvinas)\nFaroe Islands\nFiji\nFinland\nFrance\nFrench Guiana\nFrench Polynesia\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGibraltar\nGreece\nGreenland\nGrenada\nGuadeloupe\nGuam\nGuatemala\nGuernsey\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHong Kong\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsle of Man\nIsrael\nItaly\nJamaica\nJapan\nJersey\nJordan\nKazakhstan\nKenya\nKiribati\nKorea, Republic of\nKuwait\nKyrgyzstan\nLao People's Democratic Republic\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacao\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMartinique\nMauritania\nMauritius\nMayotte\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMontserrat\nMorocco\nMozambique\nMyanmar\nNamibia\nNauru\nNepal\nNetherlands\nNew Caledonia\nNew Zealand\nNicaragua\nNiger\nNigeria\nNiue\nNorth Macedonia\nNorway\nOman\nPakistan\nPalau\nPalestine\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPitcairn\nPoland\nPortugal\nPuerto Rico\nQatar\nR\u00e9union\nRomania\nRussian Federation\nRwanda\nSaint Barth\u00e9lemy\nSaint Helena\nSaint Kitts and Nevis\nSaint Lucia\nSaint Martin\nSaint Pierre and Miquelon\nSaint Vincent and the Grenadines\nSamoa\nSan Marino\nSao Tome and Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSint Maarten\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Georgia and the South Sandwich Islands\nSouth Sudan\nSpain\nSri Lanka\nSudan\nSuriname\nSvalbard and Jan Mayen\nSwaziland\nSweden\nSwitzerland\nSyrian Arab Republic\nTaiwan\nTajikistan\nTanzania\nThailand\nTimor-Leste\nTogo\nTokelau\nTonga\nTrinidad and Tobago\nTunisia\nTurkey\nTurkmenistan\nTurks and Caicos Islands\nTuvalu\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVenezuela\nViet Nam\nVirgin Islands, British\nVirgin Islands, U.S.\nWallis and Futuna\nWestern Sahara\nYemen\nZambia\nZimbabwe"
+  },
+  {
+   "fieldname": "other_contact_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Contact Details"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email address",
+   "reqd": 1,
+   "options": "Email",
+   "description": "Must be a valid email address."
+  },
+  {
+   "fieldname": "primary_phone_number",
+   "fieldtype": "Data",
+   "label": "Primary phone number",
+   "reqd": 1,
+   "description": "Include country code with a plus sign at the start, e.g. +27 12 345 6789"
+  },
+  {
+   "fieldname": "secondary_phone_number",
+   "fieldtype": "Data",
+   "label": "Secondary phone number"
+  },
+  {
+   "fieldname": "education_work_experience_section",
+   "fieldtype": "Section Break",
+   "label": "Education/Work Experience"
+  },
+  {
+   "fieldname": "highest_grade_level",
+   "fieldtype": "Select",
+   "label": "Highest grade level obtained in secondary school",
+   "reqd": 1,
+   "options": "12\n11\n10\n9\nOther",
+   "description": "E.g. Grade 12, O-levels, etc."
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currently_employed",
+   "fieldtype": "Select",
+   "label": "Are you currently employed?",
+   "reqd": 1,
+   "options": "Yes\nNo\nSelf-employed"
+  },
+  {
+   "fieldname": "workplace_name",
+   "fieldtype": "Data",
+   "label": "Name of workplace"
+  },
+  {
+   "fieldname": "main_responsibilities",
+   "fieldtype": "Long Text",
+   "label": "Your Main Responsibilities"
+  },
+  {
+   "fieldname": "date_work_started",
+   "fieldtype": "Date",
+   "label": "Date work started"
+  },
+  {
+   "fieldname": "date_work_ended",
+   "fieldtype": "Date",
+   "label": "Date work ended",
+   "description": "Leave blank if you are presently employed."
+  },
+  {
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact Information",
+   "description": "In case you experience an emergency situation during your training with FCE, who should we contact? Please double-check that the information is accurate."
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Name of Emergency Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_contact_relationship",
+   "fieldtype": "Data",
+   "label": "Relationship to Emergency Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_contact_address",
+   "fieldtype": "Long Text",
+   "label": "Address of Emergency Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_contact_primary_phone",
+   "fieldtype": "Data",
+   "label": "Primary Phone Number for Emergency Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_contact_secondary_phone",
+   "fieldtype": "Data",
+   "label": "Secondary Phone Number for Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_contact_email",
+   "fieldtype": "Data",
+   "label": "Email address for Emergency Contact",
+   "reqd": 1,
+   "options": "Email"
+  },
+  {
+   "fieldname": "social_support_section",
+   "fieldtype": "Section Break",
+   "label": "Social Support Info"
+  },
+  {
+   "fieldname": "social_support_network",
+   "fieldtype": "Long Text",
+   "label": "How would you describe your social support network?",
+   "reqd": 1,
+   "description": "Where do you find social and emotional support? Perhaps this may include your family, a local church community, etc."
+  },
+  {
+   "fieldname": "discipleship_support",
+   "fieldtype": "Long Text",
+   "label": "Do you have anyone supporting your decision to get involved in discipleship?",
+   "reqd": 1,
+   "description": "This includes socially, emotionally, and/or financially. If yes, please give details."
+  },
+  {
+   "fieldname": "associated_with_local_church",
+   "fieldtype": "Select",
+   "label": "Are you currently associated with a local church group?",
+   "reqd": 1,
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "local_church_section",
+   "fieldtype": "Section Break",
+   "label": "Local Church Group Info",
+   "description": "Optional"
+  },
+  {
+   "fieldname": "local_church_name",
+   "fieldtype": "Data",
+   "label": "Name of Local Church"
+  },
+  {
+   "fieldname": "local_church_denomination",
+   "fieldtype": "Data",
+   "label": "Denomination"
+  },
+  {
+   "fieldname": "pastor_minister_name",
+   "fieldtype": "Data",
+   "label": "Pastor/Minister's Name"
+  },
+  {
+   "fieldname": "local_church_address",
+   "fieldtype": "Long Text",
+   "label": "Local Church's Address"
+  },
+  {
+   "fieldname": "local_church_phone",
+   "fieldtype": "Data",
+   "label": "Local Church's Phone Number"
+  },
+  {
+   "fieldname": "local_church_email",
+   "fieldtype": "Data",
+   "label": "Local Church's Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "years_of_membership",
+   "fieldtype": "Data",
+   "label": "Years of Membership",
+   "description": "How many years have you been a member at this church?"
+  },
+  {
+   "fieldname": "local_church_involvement",
+   "fieldtype": "Long Text",
+   "label": "Your Involvement at the Local Church",
+   "description": "Describe your involvement in the local church."
+  },
+  {
+   "fieldname": "pastor_approval",
+   "fieldtype": "Select",
+   "label": "Does your Pastor/Minister approve of you being trained by FCE?",
+   "options": "Yes\nNo\nNot sure"
+  },
+  {
+   "fieldname": "church_financial_support",
+   "fieldtype": "Select",
+   "label": "Local Church Financial Support",
+   "options": "Yes\nNo\nNot sure",
+   "description": "Will your church be willing to support you financially whilst in training?"
+  },
+  {
+   "fieldname": "church_missionary_sending",
+   "fieldtype": "Select",
+   "label": "Will your local church group be willing to send you out as their missionary?",
+   "options": "Yes\nNo\nNot sure\nNot applicable"
+  },
+  {
+   "fieldname": "finances_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Finances and Payment",
+   "description": "PLEASE NOTE: We do not encourage debt and we do not want you to go into debt to pay for this training. We also do not want you to pay for this training and then you cannot keep up with liabilities elsewhere."
+  },
+  {
+   "fieldname": "sufficient_financial_resources",
+   "fieldtype": "Select",
+   "label": "Sufficient Financial Resources for Training",
+   "reqd": 1,
+   "options": "Yes\nNo",
+   "description": "Do you have sufficient financial resources for your training?"
+  },
+  {
+   "fieldname": "source_of_funds",
+   "fieldtype": "Long Text",
+   "label": "Source of Funds",
+   "reqd": 1,
+   "description": "If you answered yes, list who is responsible for supplying the finances. If no, how do you intend to raise the funds?"
+  },
+  {
+   "fieldname": "payment_plan",
+   "fieldtype": "Select",
+   "label": "Payment Plan",
+   "reqd": 1,
+   "options": "Pay 100% on day of registration\nPay in monthly installments through training's duration",
+   "description": "Indicate one of the following payment plans. NB! No late payments are allowed."
+  },
+  {
+   "fieldname": "agreements_section",
+   "fieldtype": "Section Break",
+   "label": "Agreements",
+   "description": "Carefully read all of the following agreements and respond accordingly."
+  },
+  {
+   "fieldname": "financial_agreement",
+   "fieldtype": "Data",
+   "label": "Financial Agreement",
+   "reqd": 1,
+   "description": "Read the financial agreement. If you understand and agree with it, type Yes in the field below."
+  },
+  {
+   "fieldname": "consent_for_treatment_signature",
+   "fieldtype": "Data",
+   "label": "Consent for Treatment Signature",
+   "reqd": 1,
+   "description": "If you agree with the Consent for Treatment Agreement, type your full name on the line below."
+  },
+  {
+   "fieldname": "final_agreement",
+   "fieldtype": "Data",
+   "label": "Agreement",
+   "reqd": 1,
+   "description": "Read the agreement. If you understand and agree with it, type Yes in the field below."
+  },
+  {
+   "fieldname": "legacy_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Legacy Fields"
+  },
+  {
+   "fieldname": "what_is_your_motivation_for_applying_for_this_training",
+   "fieldtype": "Long Text",
+   "label": "Legacy Motivation",
+   "hidden": 1
   },
   {
    "fieldname": "what_are_your_expectations_for_this_training",
-   "fieldtype": "Small Text",
-   "label": "What are your expectations for this training?"
-  },
-  {
-   "fieldname": "tab_2_tab",
-   "fieldtype": "Tab Break",
-   "label": "Tab 2"
+   "fieldtype": "Long Text",
+   "label": "Legacy Expectations",
+   "hidden": 1
   },
   {
    "fieldname": "when_and_how_did_you_become_a_follower_of_christ",
-   "fieldtype": "HTML",
-   "label": "When and how did you become a follower of Christ?",
-   "options": "<div class=\"form-section\">\n  <h4>Have you responded to God's calling?</h4>\n  <p class=\"text-muted\">\n    If yes, please give a brief account of your calling and the guidance you received.\n  </p>\n</div>"
+   "fieldtype": "Long Text",
+   "label": "Legacy Follower of Christ",
+   "hidden": 1
   },
   {
    "fieldname": "what_are_the_things_the_lord_is_teaching_you_at_the_moment",
-   "fieldtype": "Small Text",
-   "label": "What are the things the Lord is teaching you at the moment?"
+   "fieldtype": "Long Text",
+   "label": "Legacy Lord Teaching",
+   "hidden": 1
   },
   {
-   "description": "If yes, please give a brief account of your calling and the guidance you received.",
    "fieldname": "have_you_answered_gods_call_to_discipleship",
    "fieldtype": "Long Text",
-   "label": "Have you answered Gods call to discipleship?"
+   "label": "Legacy Discipleship Calling",
+   "hidden": 1
   },
   {
-   "description": "Name and describe any hobbies you have.",
    "fieldname": "small_text_rdfp",
-   "fieldtype": "Small Text",
-   "label": "What are your hobbies?"
+   "fieldtype": "Long Text",
+   "label": "Legacy Hobbies",
+   "hidden": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-01 16:25:50.954889",
+ "modified": "2026-07-03 23:20:00.000000",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Application",
@@ -157,5 +732,8 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "autoname": "format:DMT-APP-{YYYY}-{#####}",
+ "title_field": "applicant_full_name",
+ "search_fields": "first_name,surname,email_address,training_intake_choice"
 }

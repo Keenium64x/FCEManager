@@ -11,15 +11,18 @@ app_license = "bsl-1.0"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "fcemanager",
-# 		"logo": "/assets/fcemanager/logo.png",
-# 		"title": "FCEManager",
-# 		"route": "/fcemanager",
-# 		"has_permission": "fcemanager.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "fcemanager",
+		"title": "FCEManager",
+		"route": "/app/fcemanager",
+	}
+]
+
+after_migrate = [
+	"fcemanager.patches.sync_production_navigation.execute",
+	"fcemanager.patches.sync_dmt_application_web_form.execute",
+]
 
 # Includes in <head>
 # ------------------
@@ -253,4 +256,3 @@ require_type_annotated_api_methods = True
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

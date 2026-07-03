@@ -5,11 +5,11 @@
  "docstatus": 0,
  "doctype": "Desktop Icon",
  "hidden": 0,
- "icon_type": "App",
+ "icon_type": "Link",
  "idx": 0,
  "label": "FCEManager App",
  "link": "",
- "link_type": "External",
+ "link_type": "Workspace Sidebar",
  "modified": "2026-04-03 21:00:12.874615",
  "modified_by": "Administrator",
  "name": "FCEManager App",
@@ -17,5 +17,6 @@
  "restrict_removal": 0,
  "roles": [],
  "sidebar": "",
- "standard": 1
+ "standard": 1,
+ "link_to": "FCEManager"
 }

@@ -181,5 +181,6 @@
   }
  ],
  "title": "FCEManager",
- "type": "Workspace"
+ "type": "Workspace",
+ "module_onboarding": "DMT System Onboarding"
 }

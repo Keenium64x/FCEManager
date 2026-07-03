@@ -1,5 +1,6 @@
 {
  "action": "Create Entry",
+ "action_label": "Create DMT Group",
  "creation": "2026-04-26 17:16:48.319327",
  "docstatus": 0,
  "doctype": "Onboarding Step",
