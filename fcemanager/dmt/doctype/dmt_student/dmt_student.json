@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2026-03-31 15:09:52.628037",
  "doctype": "DocType",
@@ -23,6 +24,7 @@
   "phone",
   "email",
   "current_country",
+  "current_region",
   "current_address",
   "dmt_tab",
   "dmt_status_section",
@@ -203,16 +205,22 @@
    "label": "Applying"
   },
   {
+   "default": "Pending",
    "fieldname": "payment",
    "fieldtype": "Select",
    "label": "Payment",
-   "options": "Paid\nPending\nCustom"
+   "options": "Pending\nPaid\nCustom"
+  },
+  {
+   "fieldname": "current_region",
+   "fieldtype": "Data",
+   "label": "Current Region"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-26 16:57:47.974759",
+ "modified": "2026-04-26 18:09:24.539239",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT Student",
@@ -223,6 +231,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

@@ -21,6 +21,7 @@ class DMTStudent(Document):
 		country_of_origin: DF.Link | None
 		current_address: DF.Data | None
 		current_country: DF.Link | None
+		current_region: DF.Data | None
 		email: DF.Data | None
 		first_name: DF.Data | None
 		full_name: DF.Data | None
@@ -29,7 +30,7 @@ class DMTStudent(Document):
 		last_time_visited: DF.Date | None
 		middle_names: DF.Data | None
 		note: DF.LongText | None
-		payment: DF.Literal["Paid", "Pending", "Custom"]
+		payment: DF.Literal["Pending", "Paid", "Custom"]
 		phone: DF.Data | None
 		relation: DF.Table[DMTRelation]
 		status: DF.Literal["Pending", "Accepted", "Rejected"]

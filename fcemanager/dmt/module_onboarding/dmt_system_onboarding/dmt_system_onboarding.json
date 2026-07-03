@@ -9,7 +9,7 @@
  "doctype": "Module Onboarding",
  "idx": 0,
  "is_complete": 0,
- "modified": "2026-04-25 00:09:47.480849",
+ "modified": "2026-04-26 17:16:59.378146",
  "modified_by": "Administrator",
  "module": "DMT",
  "name": "DMT System Onboarding",
@@ -19,7 +19,13 @@
    "step": "Create Training Center"
   },
   {
+   "step": "Create Training Intake"
+  },
+  {
    "step": "Create DMT Student"
+  },
+  {
+   "step": "Create DMT Group"
   }
  ],
  "title": "DMT System Onboarding"

@@ -1,0 +1,42 @@
+{
+ "creation": "2026-04-26 17:06:01.477190",
+ "docstatus": 0,
+ "doctype": "Form Tour",
+ "first_document": 0,
+ "idx": 0,
+ "include_name_field": 0,
+ "is_standard": 1,
+ "list_name": "List",
+ "modified": "2026-04-26 17:15:55.702639",
+ "modified_by": "Administrator",
+ "module": "DMT",
+ "name": "Create Training Intake Tour",
+ "new_document_form": 0,
+ "owner": "Administrator",
+ "reference_doctype": "Training Intake",
+ "report_name": "",
+ "save_on_complete": 0,
+ "steps": [
+  {
+   "description": "This is a period in which a DMT will happen. It can be any duration",
+   "fieldname": "period",
+   "fieldtype": "Link",
+   "has_next_condition": 0,
+   "hide_buttons": 0,
+   "is_table_field": 0,
+   "label": "Period",
+   "modal_trigger": 0,
+   "next_on_click": 0,
+   "offset_x": 0,
+   "offset_y": 0,
+   "popover_element": 0,
+   "position": "Bottom",
+   "title": "Create a period",
+   "ui_tour": 0
+  }
+ ],
+ "title": "Create Training Intake Tour",
+ "track_steps": 0,
+ "ui_tour": 0,
+ "view_name": "Workspaces"
+}
