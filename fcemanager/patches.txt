@@ -7,3 +7,5 @@
 fcemanager.patches.sync_production_navigation
 fcemanager.patches.sync_dmt_application_web_form
 fcemanager.patches.seed_website_navigation
+fcemanager.patches.seed_website_content
+fcemanager.patches.sync_untouched_website_content_defaults

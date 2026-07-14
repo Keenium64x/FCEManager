@@ -1,0 +1,1 @@
+"""FCE Website Content DocType."""

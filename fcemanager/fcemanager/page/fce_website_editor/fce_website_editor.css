@@ -1,0 +1,8 @@
+.fce-editor { max-width: 980px; margin: 0 auto; padding: 1rem 0 4rem; }
+.fce-editor__summary { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1rem; border:1px solid var(--border-color); border-radius:var(--border-radius-md); background:var(--fg-color); padding:1rem 1.15rem; }
+.fce-editor__summary p { margin:0 0 .5rem; }
+.fce-editor__status { display:flex; align-items:center; gap:.75rem; font-size:.78rem; color:var(--text-muted); }
+.fce-editor__form { border:1px solid var(--border-color); border-radius:var(--border-radius-md); background:var(--fg-color); padding:1rem 1.25rem 1.5rem; }
+.fce-editor__form .section-head { margin-top:1.25rem; color:var(--text-color); font-size:1rem; font-weight:700; }
+.fce-editor__form .frappe-control { margin-bottom:.75rem; }
+@media(max-width:767px){.fce-editor__summary{align-items:flex-start;flex-direction:column}.fce-editor__form{padding:.75rem}}
