@@ -1,0 +1,70 @@
+/* Shared FCE chrome for native Frappe Web Pages, Web Forms and Builder handoffs. */
+:root {
+  --fce-blue-50: #f3f8fd;
+  --fce-blue-100: #e2eef9;
+  --fce-blue-600: #1769aa;
+  --fce-blue-700: #10568f;
+  --fce-blue-800: #0a3e6c;
+  --fce-text: #14263a;
+  --fce-muted: #5d7085;
+  --fce-border: #dce6ef;
+  --fce-radius: 0.9rem;
+}
+
+body {
+  color: var(--fce-text);
+  background: #fff;
+}
+
+.navbar {
+  min-height: 5.4rem;
+  border-bottom: 1px solid var(--fce-border);
+  background: rgb(255 255 255 / 0.96) !important;
+  backdrop-filter: blur(14px);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--fce-text) !important;
+  font-weight: 700;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--fce-blue-700) !important;
+}
+
+.navbar .navbar-cta,
+.web-form-actions .btn-primary,
+.page_content .btn-primary {
+  border-color: var(--fce-blue-700) !important;
+  border-radius: 999px !important;
+  background: var(--fce-blue-700) !important;
+  color: #fff !important;
+}
+
+.web-form-wrapper,
+.page_content {
+  --border-color: var(--fce-border);
+  --primary: var(--fce-blue-700);
+}
+
+.web-form-header,
+.web-form-page,
+.page-card,
+.card {
+  border-color: var(--fce-border) !important;
+  border-radius: var(--fce-radius) !important;
+}
+
+.web-footer {
+  border-top: 1px solid var(--fce-border);
+  background: var(--fce-blue-800);
+  color: rgb(255 255 255 / 0.78);
+}
+
+.web-footer a,
+.web-footer h3,
+.web-footer h4 {
+  color: #fff !important;
+}

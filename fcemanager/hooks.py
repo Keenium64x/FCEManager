@@ -32,7 +32,7 @@ after_migrate = [
 # app_include_js = "/assets/fcemanager/js/fcemanager.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/fcemanager/css/fcemanager.css"
+web_include_css = "/assets/fcemanager/css/fce-website.css"
 # web_include_js = "/assets/fcemanager/js/fcemanager.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -60,7 +60,41 @@ after_migrate = [
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "fce"
+
+website_route_rules = [
+	{"from_route": route, "to_route": "fce"}
+	for route in (
+		"/about",
+		"/training",
+		"/locations",
+		"/get-involved",
+		"/projects",
+		"/resources",
+		"/contact",
+		"/privacy",
+	)
+]
+
+website_redirects = [
+	{"source": "/home", "target": "/"},
+	{"source": "/who-we-are", "target": "/about"},
+	{"source": "/about-vision", "target": "/about"},
+	{"source": "/statements", "target": "/about#faith"},
+	{"source": "/dmt", "target": "/training"},
+	{"source": "/dmt-courses(?:/.*)?", "target": "/training#opportunities"},
+	{"source": "/dmt-(?:malawi|nam|sa-26|sa-nam-27|sa-oct|zam|zim)", "target": "/training#opportunities"},
+	{"source": "/dmt-(?:south-sudan|uganda)", "target": "/training"},
+	{"source": "/locations-overview", "target": "/locations"},
+	{"source": "/our-training-centres", "target": "/locations"},
+	{"source": "/get-involved-2", "target": "/get-involved"},
+	{"source": "/pray", "target": "/get-involved#pray"},
+	{"source": "/volunteer", "target": "/get-involved#volunteer"},
+	{"source": "/bible23-project", "target": "/get-involved#bible23"},
+	{"source": "/haggai", "target": "/locations#haggai-centre-for-teacher-development"},
+	{"source": "/feedback-projects24(?:/.*)?", "target": "/projects#archive"},
+	{"source": "/announcements(?:/.*)?", "target": "/about#history"},
+]
 
 # website user home page (by Role)
 # role_home_page = {

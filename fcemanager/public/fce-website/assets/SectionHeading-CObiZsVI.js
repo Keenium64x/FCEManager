@@ -1,0 +1,1 @@
+import{o as a,a as n,b as t,t as o,G as r}from"./index-IVRxHjKP.js";const i={class:"section-heading site-grid"},c={class:"eyebrow"},g={__name:"SectionHeading",props:{eyebrow:String,title:String,copy:String},setup(e){return(s,l)=>(a(),n("header",i,[t("p",c,o(e.eyebrow),1),t("h2",null,o(e.title),1),t("p",null,o(e.copy),1),r(s.$slots,"default")]))}};export{g as _};
